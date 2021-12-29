@@ -1,0 +1,17 @@
+Here is simplest way how to change navbar color after window scroll:
+
+Add follow JS to head:
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+and this CSS code
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+Background color of fixed navbar will be change to white when scroll exceeds height of navbar
