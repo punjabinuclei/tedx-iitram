@@ -1,165 +1,52 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-family:Helvetica, sans-serif, Arial;
+  font-family: Helvetica, sans-serif, Arial;
 }
 
+
 body{
-    background: #121212;
-    min-height: 200vh;
-    
-  }
+  background: #121212;
+  min-height: 200vh;
   
-  
-  
-  
-  /*--------------------------------------------------- nav-------------------------------------------- */
-  
-  .navbar-nav > li{
-    padding-left:30px;
-    padding-right:30px;
-    font-size: 0.98rem;
-  }
-  
-  .button-nav{
-    margin-left:5px;
-    
-  
-  }
-  
-  
-  
-  nav .navbar-nav li a{
-    color: white !important;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28.16px;
-    }
-
-    nav  .button-nav{
-        border: 1px solid #E62B1E;
-        color: #ffffff;
-        font-size: 16px;
-    font-weight: 00;
-    line-height: 28.16px;
-    }
-
-    nav  .button-nav:hover{
-        
-        background-color: #E62B1E;
-        color: #ffffff;
-    }
+}
 
 
 
 
-    
+/*--------------------------------------------------- nav-------------------------------------------- */
 
-/* Hover aniation */
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #E62B1E;
-  }
-  
-  .hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:  #E62B1E;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+  font-size: 0.98rem;
+}
+
+.button-nav{
+  margin-left:40px;
   
 
+}
 
 
 
-
-  /* HERO PAGE_____________________________________________________________________________________________________ */
-  
-  .box-1 h1{
- position: absolute;
-width: 550px;
-height: 110px;
-left: 164px;
-top: 376px;
-
-font-family: Helvetica;
-font-style: normal;
-font-weight: bold;
-font-size: 96px;
-line-height: 110px;
-
-/* Ted White */
-
-color: #FFFFFF;
-
+nav .navbar-nav li a{
+  color: white !important;
   }
 
+.navbar-bg-left{
+  position: absolute;
+  top: -10%;
+  left: -20%;
+}
 
-
-  .box-1 img{
-    position: absolute;
-    width: 280px;
-    height: 89px;
-    left: 142px;
-    top: 469px;
-    
-  }
-
-
-  .box-1 h2{
-    position: absolute;
-    width: 277px;
-    height: 67px;
-    left: 429px;
-    top: 476px;
-    
-    font-family: Helvetica Light;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 38px;
-    line-height: 175.99%;
-    /* identical to box height, or 67px */
-    
-    
-    /* Ted White */
-    
-    color: #FFFFFF;
-  }
-
-
-
-  .box-1 p{
-    position: absolute;
-    width: 158px;
-    height: 24px;
-    left: 199px;
-    top: 597px;
-    
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 24px;
-    
-    /* Ted White */
-    
-    color: #FFFFFF;
-    
-  }
+.navbar-bg-right{
+  position: absolute;
+left: 18.59%;
+right: -4.91%;
+top: -2.38%;
+bottom: 97.87%;
+transform: rotate(1.99deg);
+}
 
 
 
@@ -169,36 +56,82 @@ color: #FFFFFF;
 
 
 
-  
- .box-1 .register-box{
-    position: absolute;
-    width: 542px;
-    height: 60px;
-    left: 164px;
-    top: 579px;
-    
-    /* Ted Red */
-    
-
-    box-sizing: border-box;
-    border-radius: 10px;
- }
 
 
+  /* ------------------------------------------------------------------------------------------------------- */
+.hero-section{
+  margin-top: 10%;
+}
 
+.container-fluid{
+  padding: 1.5% 4%;
+}
 
+.box-1 img{
+  height:300px;
+  width: 450px;
+}
 
+.date-hero-page{
+  margin-top: -12%;
+  margin-left: 8%;
+  width: 60%;
 
+}
 
+.box-1 h3{
+font-size: 1.2rem;
+color: #ffffff;
+outline: 1px solid red;
+border-radius: 2%;
+padding: 1%;
+}
+
+.box-1 h3 btn-outline-danger{
+  padding: 1%;
+}
 
 
 .box-2 img{
-    position: absolute;
-left: 55.28%;
-right: 9.17%;
-top: 5.45%;
-bottom: 77.23%;
-
+  height: 500px;
+  width: 600px;
 }
 
 
+/* responsive */
+
+@media screen and (max-width:960px){
+
+  .box-1 img{
+    height:500px;
+    width: 650px;
+  }
+  
+  .box-2 img{
+    height: 700px;
+    width: 850px;
+  }
+  
+  
+}
+
+@media screen and (max-width:600px){
+
+  body{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .box-1 img{
+    height:500px;
+    width: 550px;
+  }
+  
+  .box-2 img{
+    height: 500px;
+    width: 650px;
+  }
+  
+  
+}
