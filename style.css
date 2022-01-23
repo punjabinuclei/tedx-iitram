@@ -15,12 +15,14 @@ body{
     color: #ffffff;
     /* overflow-x: hidden; */
     scroll-behavior: smooth;
+    position: relative;
     
     
 }
 
 
 
+/* ______________________________________________________ */
 
 
 
@@ -95,7 +97,9 @@ transform: rotate(1.99deg);
 
 
 .homepage{
+    margin-top: 3%;
     position: relative;
+    height: 70vh;
 }
 
 .homepage p{
@@ -183,7 +187,87 @@ border-radius: 10px;
 .illustration-left-homepage{
     position: absolute;
     left: 0%;
-    top: -80%;
+    top: -20%;
+    opacity: 1;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+
+
+@media screen and (max-width:1024px) {
+    
+.homepage{
+    height: 50vh;
+}
+
+    .box-date{
+        border:  solid #E62B1E 1px; 
+        border-radius: 8px;
+        font-size: 0.8rem;
+        border-right: transparent;
+    
+    }
+    
+    
+    .btn-home{
+    background: #E62B1E;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 175.99%;
+    
+    border-radius: 8px;
+    
+    
+    }
+
+
+
+    /* illustration01 */
+.illustration-left-homepage{
+    position: absolute;
+    left: 0%;
+    top: 5%;
     opacity: 1;
     
 }
+
+
+
+
+    
+}
+
+@media screen and (max-width:500px) {
+    
+    .homepage{
+        height: 80vh;
+    }
+    
+}
+
+
+
+
+    
+
+
+   
